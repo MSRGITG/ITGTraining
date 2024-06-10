@@ -1,9 +1,9 @@
+<isdecorate template="common/layout/page">
+  <form action="https://zydh-001.dx.commercecloud.salesforce.com/on/demandware.store/Sites-RefArch-Site/en_US/Home-Submit"
+   method="POST">
 
-<form action="https://zydh-001.dx.commercecloud.salesforce.com/on/demandware.store/Sites-RefArch-Site/en_US/Home-AddNumber"
- method="POST">
-
-      <label for="number">enter a number</label>
-      <input type="number" id="number" name="number" >
-      <input type="submit" value="Submit">
+      <label for="order id">enter order id</label>
+      <input type="text" id="orderid" name="orderid">
+      <input type="submit" value="search">
 </form>
-
+</isdecorate>
