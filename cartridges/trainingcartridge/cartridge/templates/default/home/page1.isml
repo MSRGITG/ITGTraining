@@ -1,0 +1,4 @@
+<isdecorate template="common/layout/page">
+    <p>greeting message</p>
+    <h1>Hello User , Welcome you to our Home Page1</h1>
+</isdecorate>
