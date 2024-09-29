@@ -1,3 +1,4 @@
+# This is a repo for Mohammad Ghazal's ITG training
 # Storefront Reference Architecture (SFRA)
 
 This is a repository for the Storefront Reference Architecture reference application.
