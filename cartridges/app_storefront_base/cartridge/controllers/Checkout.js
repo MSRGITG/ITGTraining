@@ -54,9 +54,6 @@ server.get(
             res.redirect(URLUtils.url('Cart-Show'));
             return next();
         }
-        // here i will the product quantities inside the cart 
-        var lessQuantitiesItems = validateCartItems(currentBasket);
-        
         var requestStage = req.querystring.stage;
         var currentStage = requestStage || 'customer';
         var billingAddress = currentBasket.billingAddress;
