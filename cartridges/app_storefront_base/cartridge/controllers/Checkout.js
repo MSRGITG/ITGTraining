@@ -54,6 +54,7 @@ server.get(
             res.redirect(URLUtils.url('Cart-Show'));
             return next();
         }
+
         var requestStage = req.querystring.stage;
         var currentStage = requestStage || 'customer';
         var billingAddress = currentBasket.billingAddress;
