@@ -45,7 +45,7 @@
         }
     </style>
 
-    <h1>Order-Status Page:</h1>
+    <h1>Order-Status Page</h1>
     <h2>The OrderingNo you entered +1 is: ${pdict.resultnumber}</h2>
     <isif condition="${pdict.orderStatus && pdict.orderTotalPrice}">
         <h3>Order Status: ${pdict.orderStatus}</h3>
