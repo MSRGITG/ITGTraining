@@ -1,0 +1,57 @@
+<isdecorate template="common/layout/page">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007BFF;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        h3 {
+            color: #333;
+            text-align: center;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            text-align: center;
+            color: red;
+            font-weight: bold;
+        }
+
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 15px;
+        }
+    </style>
+
+    <h1>Order-Status Page</h1>
+    <h2>The OrderingNo you entered +1 is: ${pdict.resultnumber}</h2>
+    <isif condition="${pdict.orderStatus && pdict.orderTotalPrice}">
+        <h3>Order Status: ${pdict.orderStatus}</h3>
+        <h3>Order Total Price: ${pdict.orderTotalPrice}</h3>
+    </isif>
+    <isif condition="${pdict.errorMsg}">
+        <p style="color:red;">${pdict.errorMsg}</p>
+    </isif>
+</isdecorate>
