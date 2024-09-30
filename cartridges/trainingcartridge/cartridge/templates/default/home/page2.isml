@@ -51,11 +51,4 @@
         <h3>Order Status: ${pdict.orderStatus}</h3>
         <h3>Order Total Price: ${pdict.orderTotalPrice}</h3>
     </isif>
-<<<<<<< HEAD
 </isdecorate>
-=======
-    <isif condition="${pdict.errorMsg}">
-        <p style="color:red;">${pdict.errorMsg}</p>
-    </isif>
-</isdecorate>
->>>>>>> a5107f6f48960ce7c0c114751500db2b95dcc204
