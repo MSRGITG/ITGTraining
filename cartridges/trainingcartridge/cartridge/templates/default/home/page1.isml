@@ -45,11 +45,11 @@
     }
 </style>
 <isdecorate template="common/layout/page">
-    <p>Greeting message!</p>
-    <h1>Hello User, Welcome to our Home Page1</h1>
-    <form action="https://zydh-006.dx.commercecloud.salesforce.com/on/demandware.store/Sites-RefArch-Site/en-US/Home-AddNumber" method="POST">
-        <label for="number">Please enter any number you want:</label>
-        <input type="number" id="number" name="number" required>
-        <button type="submit">+1</button>
+    <p>Greeting message:</p>
+    <h1>Hello User, Welcome to the Orders book page!</h1>
+    <form action="https://zydh-006.dx.commercecloud.salesforce.com/on/demandware.store/Sites-RefArch-Site/en-US/OrderHandling-IncrementOrderingNo" method="POST">
+        <label for="number">Please Enter The Order Id:</label>
+        <input type="text" id="orderId" name="orderId" required>
+        <button type="submit">Submit Your Order</button>
     </form>
 </isdecorate>
