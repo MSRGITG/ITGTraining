@@ -45,7 +45,7 @@
     }
 </style>
 <isdecorate template="common/layout/page">
-    <p>Greeting message:</p>
+    <p>Greeting message!</p>
     <h1>Hello User, Welcome to our Home Page1</h1>
     <form action="https://zydh-006.dx.commercecloud.salesforce.com/on/demandware.store/Sites-RefArch-Site/en-US/Home-AddNumber" method="POST">
         <label for="number">Please enter any number you want:</label>
