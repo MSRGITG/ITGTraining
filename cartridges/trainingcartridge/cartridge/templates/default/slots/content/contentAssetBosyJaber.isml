@@ -1,0 +1,9 @@
+<isif condition="${slotcontent != null}">
+    <div style="display: flex; flex-wrap: nowrap;">
+        <isloop items="${slotcontent.content}" var="contentAsset">
+            <div style="position: relative; margin-left: 50px;">
+                <isprint value="${contentAsset.custom.body}" encoding="off" />
+            </div>
+        </isloop>
+    </div>
+</isif>
