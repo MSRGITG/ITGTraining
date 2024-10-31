@@ -5,14 +5,9 @@
         assets.addCss('/css/homePage.css');
     </isscript>
 
-    <!-- +1.888.555.0199 -->
-    <!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demandware customers can remove this.-->
+    <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demandware customers can remove this.-->
     <div class="home-main homepage">
         <isslot id="home-main-m" description="Main home page slot." context="global" />
-    </div>
-
-    <div class="home-main homepage jaber">
-        <isslot id="home-main-jaber" description="Main home page slot custom." context="global" />
     </div>
 
     <div class="container home-categories homepage">
@@ -24,11 +19,6 @@
     <div class="container home-product-tiles homepage">
         <div class="hp-product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
             <isslot id="home-products-m" description="Product tiles on the home page." context="global" />
-        </div>
-    </div>
-    <div class="container home-product-tiles homepage jaber">
-        <div class="hp-product-grid-jaber" itemtype="http://schema.org/SomeProducts" itemid="#product">
-            <isslot id="home-products-jaber" description="Product tiles on the home page custom." context="global" />
         </div>
     </div>
 
