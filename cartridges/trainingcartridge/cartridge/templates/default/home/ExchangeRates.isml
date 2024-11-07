@@ -1,0 +1,83 @@
+<isdecorate template="common/layout/page">
+    <h1>Currency Conversion Rates (EUR)</h1>
+
+    <style>
+        h1 {
+            margin-left: 500px;
+            margin-top: 20px;
+        }
+
+        .table-container {
+            width: 50%;
+            margin: 20px auto 20px auto;
+            max-height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #BDBBDB;
+            color: black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #BDBBDB;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        table th,
+        table td {
+            font-size: 16px;
+        }
+    </style>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Rate</th>
+                </tr>
+            </thead>
+            <tbody>
+                <isscript>
+                    var ratesArray = [];
+                    for (var key in pdict.rates) {
+                        if (pdict.rates.hasOwnProperty(key)) {
+                            ratesArray.push({ code: key, value: pdict.rates[key] });
+                        }
+                    }
+                </isscript>
+
+                <isloop items="${ratesArray}" var="currency">
+                    <tr>
+                        <td>${currency.code}</td>
+                        <td>${currency.value}</td>
+                    </tr>
+                </isloop>
+
+            </tbody>
+        </table>
+    </div>
+</isdecorate>
