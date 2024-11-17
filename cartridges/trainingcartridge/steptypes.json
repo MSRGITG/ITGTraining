@@ -1,0 +1,49 @@
+{
+    "step-types":
+    {
+      "script-module-step":
+      [
+        {
+          "@type-id":"custom.OrderRrported",
+          "@supports-parallel-execution":"false",
+          "@supports-site-context":"true",
+          "@supports-organization-context":"false",
+          "description":"Indicates if the order has been included in the shipment report. It runs in site scope.",
+          "module":"trainingcartridge/cartridge/scripts/steps/OrderShipmentReport.js",
+          "function":"execute",
+          "transactional":"true",
+          "timeout-in-seconds":"900",
+          "parameters":
+          {
+            "parameter":
+            [
+              {
+                "@name":"CustomObjectType",
+                "@type":"boolean",
+                "@required":"false",
+                "description":"The Custom Object type to delete instances on this site."
+              }
+            ]
+          },
+          "status-codes":
+          {
+            "status":
+            [
+                {
+                  "@code": "ERROR",
+                  "description": "Used when the step failed with an error."
+                },
+                {
+                  "@code": "FINISHED",
+                  "description": "Used when the step finished successfully."
+                },
+                {
+                  "@code": "FINISHED_WITH_WARNINGS",
+                  "description": "Used when the step finished with warnings."
+                }
+            ]
+          }
+        }
+      ]
+    }
+  }
