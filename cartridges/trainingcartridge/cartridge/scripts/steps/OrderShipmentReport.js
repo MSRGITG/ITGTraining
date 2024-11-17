@@ -51,7 +51,6 @@ function execute() {
     }
     csvWriter.close();
 }
-
 module.exports = {
     execute: execute
 };
